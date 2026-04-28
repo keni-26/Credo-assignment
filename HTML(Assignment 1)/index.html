@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Academic Portal</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Student Academic Portal</h1>
+    <p>This webpage provides basic information about students and allows them to register their details.</p>
+
+    <h2>Students Image</h2>
+    <img src="./images/pic.jpg" alt="Student Image">
+
+    <h2>Students Details</h2>
+    <table >
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td rowspan="2">Computer Science</td>
+            <td>3rd Year</td>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>3rd Year</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td rowspan="2">Electrical Engineering</td>
+            <td>2nd Year</td>
+        </tr>
+        <tr>
+            <td>Smith</td>
+            <td>2nd Year</td>
+        </tr>
+    </table>
+    <h2>Student Registration Form</h2>
+    <form >
+
+        <label class="ip">Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label class="ip">Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Gender:</label>
+        <div class="radio-group">
+              <label><input type="radio" name="gender" value="male"> Male</label>
+              <label><input type="radio" name="gender" value="female"> Female</label>
+        </div> 
+
+        <label>Department:</label>
+        <select>
+            <option>ECE</option>
+            <option>CSE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+        </select>
+
+        <label class="ip">Date of Birth:</label>
+        <input type="date">
+
+        <label class="ip">Upload ID Card:</label>
+        <input type="file" name="idcard" accept=".jpg, .jpeg, .png">
+
+        <button type="submit">Register</button>
+        <br>
+        <input type="reset" value="clear">
+    </form>
+
+</body>
+</html>
